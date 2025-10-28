@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GameZone – Portal de Juegos Interactivos</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>🎮 GameZone</h1>
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#juegos">Juegos</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="inicio" class="seccion fade-in">
+      <h2>¡Bienvenido a GameZone!</h2>
+      <p>Disfruta de minijuegos divertidos hechos con HTML, CSS y JavaScript.</p>
+    </section>
+
+    <section id="sobre-mi" class="seccion fade-in">
+      <h2>Sobre mí</h2>
+      <p>Hola Soy <b>Santiago Suárez</b>, estudiante del Colegio ITD Juan del Corral IED.  
+      Este proyecto fue creado para fomentar el aprendizaje de programación a través del entretenimiento.</p>
+    </section>
+
+    <section id="juegos" class="seccion fade-in">
+      <h2>🎲 Juegos</h2>
+      <div class="juegos-container">
+        <div class="juego">
+          <h3>Adivina el número</h3>
+          <button class="btn-primary" onclick="iniciarAdivina()" aria-label="Iniciar juego Adivina el número">Jugar</button>
+          <p id="resultadoAdivina"></p>
+        </div>
+        <div class="juego">
+          <h3>Clic Rápido</h3>
+          <button id="botonClic" class="btn-primary" onclick="juegoClic()" aria-label="Iniciar juego Clic Rápido">Haz clic</button>
+          <p id="resultadoClic"></p>
+        </div>
+        <div class="juego">
+          <h3>Quiz Relámpago</h3>
+          <button class="btn-primary" onclick="iniciarQuiz()" aria-label="Iniciar juego Quiz Relámpago">Jugar</button>
+          <p id="resultadoQuiz"></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="seccion fade-in">
+      <h2>Contacto</h2>
+      <form id="formulario">
+        <input type="text" placeholder="Tu nombre" required aria-label="Campo para tu nombre" />
+        <input type="email" placeholder="Tu correo" required aria-label="Campo para tu correo electrónico" />
+        <textarea placeholder="Tu mensaje" required aria-label="Campo para tu mensaje"></textarea>
+        <button type="submit" class="btn-secondary" aria-label="Enviar formulario de contacto">Enviar</button>
+      </form>
+      <p id="mensajeEnviado"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 GameZone | Desarrollado por Santiago Suárez</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
